@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI-powered coffee disease detection and classification system. Protect your coffee plantation with instant disease diagnosis and treatment recommendations.">
+    <meta name="keywords" content="coffee disease, AI detection, coffee farming, disease classification, agriculture technology">
+    <title>Coffee Disease Detection - AI-Powered Analysis</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☕</text></svg>">
+    
+    <!-- Bootstrap for Grid System -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body class="landing-page">
+    <!-- Navbar -->
+    <nav class="landing-navbar" id="navbar">
+        <div class="navbar-content">
+            <a href="index.php" class="navbar-brand">
+                <span>☕</span>
+                <span>Coffee Disease Detection</span>
+            </a>
+            
+            <div class="navbar-menu" id="navbarMenu">
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="login.html">Login</a>
+                <a href="register.html" class="btn">Get Started</a>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero-section" style="margin-top: 60px;">
+        <div class="hero-content">
+            <div class="coffee-animation">☕</div>
+            <h1>Protect Your Coffee Plantation with AI</h1>
+            <p class="lead">Instant disease detection and expert treatment recommendations powered by advanced machine learning</p>
+            
+            <div class="hero-buttons">
+                <a href="users/detection.php" class="hero-btn hero-btn-primary">
+                    <i class="fas fa-camera"></i> Start Detection
+                </a>
+                <a href="register.html" class="hero-btn hero-btn-primary">
+                    <i class="fas fa-user-plus"></i> Get Started Free
+                </a>
+                <a href="users/dashboard.php" class="hero-btn hero-btn-outline">
+                    <i class="fas fa-tachometer-alt"></i> View Dashboard
+                </a>
+                <a href="#features" class="hero-btn hero-btn-outline">
+                    <i class="fas fa-info-circle"></i> Learn More
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Statistics -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-md-4">
+                    <div class="stat-item">
+                        <div class="stat-number">200+</div>
+                        <div class="stat-label">Detections Performed</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="stat-item">
+                        <div class="stat-number">99.2%</div>
+                        <div class="stat-label">Detection Accuracy</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Features Section -->
+    <section class="features-section" id="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose Our Platform?</h2>
+                <p>Comprehensive coffee disease management made simple</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="feature-card">
+                        <div class="feature-icon primary">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>AI-Powered</h3>
+                        <p>Advanced machine learning algorithms trained on thousands of coffee leaf images for accurate disease detection.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-3">
+                    <div class="feature-card">
+                        <div class="feature-icon success">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Instant Results</h3>
+                        <p>Get disease diagnosis and treatment recommendations in seconds, not days.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-3">
+                    <div class="feature-card">
+                        <div class="feature-icon info">
+                            <i class="fas fa-prescription-bottle"></i>
+                        </div>
+                        <h3>Expert Advice</h3>
+                        <p>Detailed treatment plans including fungicides, cultural practices, and preventive measures.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-3">
+                    <div class="feature-card">
+                        <div class="feature-icon warning">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Mobile Ready</h3>
+                        <p>Works perfectly on smartphones, tablets, and desktops. Detect anywhere, anytime.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row g-4 mt-4">
+                <div class="col-md-3">
+                    <div class="feature-card">
+                        <div class="feature-icon primary">
+                            <i class="fas fa-images"></i>
+                        </div>
+                        <h3>Batch Processing</h3>
+                        <p>Analyze up to 20 images simultaneously to save time on large plantations.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-3">
+                    <div class="feature-card">
+                        <div class="feature-icon success">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Track History</h3>
+                        <p>Monitor disease trends over time with comprehensive detection history and analytics.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-3">
+                    <div class="feature-card">
+                        <div class="feature-icon info">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <h3>Cost Estimates</h3>
+                        <p>Get treatment cost estimates to help plan your crop protection budget.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-3">
+                    <div class="feature-card">
+                        <div class="feature-icon warning">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Secure & Private</h3>
+                        <p>Your data is encrypted and protected with industry-standard security measures.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-title">
+                <h2>How It Works</h2>
+                <p>Simple, fast, and accurate disease detection in 3 easy steps</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h3>Upload or Capture</h3>
+                        <p>Take a photo of the affected coffee leaf using your smartphone or upload an existing image from your device.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h3>AI Analysis</h3>
+                        <p>Our advanced AI model analyzes the image and identifies diseases with 99%+ accuracy in just seconds.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <h3>Get Treatment Plan</h3>
+                        <p>Receive detailed treatment recommendations, including fungicides, application methods, and cost estimates.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Diseases We Detect -->
+    <section class="features-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Diseases We Detect</h2>
+                <p>Comprehensive coverage of common coffee diseases</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <div class="disease-badge badge-cbd mb-3" style="font-size: 1.2em;">CBD</div>
+                            <h5>Coffee Berry Disease</h5>
+                            <p class="text-muted">Fungal disease affecting berries</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <div class="disease-badge badge-leaf-rust mb-3" style="font-size: 1.2em;">LEAF RUST</div>
+                            <h5>Coffee Leaf Rust</h5>
+                            <p class="text-muted">Orange rust on leaf undersides</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <div class="disease-badge badge-brown-eye-spot mb-3" style="font-size: 1.2em;">BROWN EYE SPOT</div>
+                            <h5>Brown Eye Spot</h5>
+                            <p class="text-muted">Circular spots with brown margins</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <div class="disease-badge badge-sooty-mould mb-3" style="font-size: 1.2em;">SOOTY MOULD</div>
+                            <h5>Sooty Mould</h5>
+                            <p class="text-muted">Black coating from insects</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Protect Your Coffee Plantation?</h2>
+            <p>Join thousands of farmers using AI to detect and treat coffee diseases</p>
+            
+            <div>
+                <a href="users/detection.php" class="btn">
+                    <i class="fas fa-camera"></i> Start Detection Now
+                </a>
+                <a href="register.html" class="btn">
+                    <i class="fas fa-user-plus"></i> Sign Up Free
+                </a>
+            </div>
+            
+            <p class="mt-3 text-muted">No credit card required • Free forever • Unlimited detections</p>
+        </div>
+    </section>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Mobile menu toggle
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const navbarMenu = document.getElementById('navbarMenu');
+        
+        if (mobileMenuToggle && navbarMenu) {
+            mobileMenuToggle.addEventListener('click', function() {
+                if (navbarMenu.style.display === 'flex') {
+                    navbarMenu.style.display = 'none';
+                } else {
+                    navbarMenu.style.display = 'flex';
+                    navbarMenu.style.position = 'absolute';
+                    navbarMenu.style.top = '100%';
+                    navbarMenu.style.left = '0';
+                    navbarMenu.style.right = '0';
+                    navbarMenu.style.background = 'white';
+                    navbarMenu.style.flexDirection = 'column';
+                    navbarMenu.style.padding = '20px';
+                    navbarMenu.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

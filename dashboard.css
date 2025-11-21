@@ -1,0 +1,277 @@
+/**
+ * css/pages/dashboard.css
+ * Dashboard Page Specific Styles
+ */
+
+/* Dashboard Grid Layout */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+/* Welcome Card - Override */
+.card.welcome-card {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    color: white;
+    border: none;
+}
+
+.card.welcome-card h3 {
+    color: white;
+}
+
+.card.welcome-card p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Charts Container */
+.charts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+/* Chart Card Specific */
+.chart-card {
+    background: var(--bg-primary);
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-lg);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border-color-light);
+}
+
+.chart-card h5 {
+    color: var(--text-primary);
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: var(--spacing-lg);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.chart-card h5 i {
+    color: var(--primary-color);
+}
+
+/* Recent Detections List */
+.detection-item {
+    display: flex;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md);
+    border: 1px solid var(--border-color-light);
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--spacing-md);
+    transition: all var(--transition-fast);
+}
+
+.detection-item:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+}
+
+.detection-thumb {
+    width: 80px;
+    height: 80px;
+    border-radius: var(--radius-md);
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.detection-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.disease-badge {
+    display: inline-block;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--radius-full);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+    margin-right: var(--spacing-sm);
+}
+
+.badge-cbd {
+    background: var(--danger-color);
+    color: white;
+}
+
+.badge-leaf-rust {
+    background: #fd7e14;
+    color: white;
+}
+
+.badge-brown-eye-spot {
+    background: var(--warning-color);
+    color: #333;
+}
+
+.badge-sooty-mould {
+    background: var(--gray-600);
+    color: white;
+}
+
+.badge-healthy {
+    background: var(--success-color);
+    color: white;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--radius-full);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+}
+
+.status-pending {
+    background: light-dark(#fff3cd, #664d03);
+    color: light-dark(#856404, #fff3cd);
+}
+
+.status-confirmed {
+    background: light-dark(#d1ecf1, #0c4a6e);
+    color: light-dark(#0c5460, #d1ecf1);
+}
+
+.status-treated {
+    background: light-dark(#d4edda, #1b4d3e);
+    color: light-dark(#155724, #d4edda);
+}
+
+.status-resolved {
+    background: light-dark(#e2e3e5, #3a3a3a);
+    color: light-dark(#383d41, #e2e3e5);
+}
+
+.confidence-bar {
+    width: 100%;
+    height: 6px;
+    background: var(--gray-200);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    margin-top: var(--spacing-xs);
+}
+
+.confidence-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--success-color) 0%, #97d700 100%);
+    transition: width 0.5s ease;
+}
+
+/* Empty State */
+.empty-state {
+    text-align: center;
+    padding: var(--spacing-2xl);
+    color: var(--text-tertiary);
+}
+
+.empty-state i {
+    font-size: 4rem;
+    margin-bottom: var(--spacing-lg);
+    opacity: 0.5;
+}
+
+.empty-state p {
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-lg);
+}
+
+/* Quick Action Button */
+.quick-action-btn {
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    border-radius: var(--radius-lg);
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all var(--transition-base);
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    text-decoration: none;
+}
+
+.quick-action-btn:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+    color: white;
+}
+
+.quick-action-btn i {
+    font-size: 1.2rem;
+}
+
+/* Chart Canvas Sizing */
+#diseaseChart,
+#trendChart {
+    max-height: 300px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .charts-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .detection-item {
+        flex-direction: column;
+    }
+    
+    .detection-thumb {
+        width: 100%;
+        height: 200px;
+    }
+}
+
+/* Loading State */
+#loading-overlay {
+    padding: 60px 20px;
+}
+
+#loading-overlay .spinner {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 20px;
+}
+
+/* Stat Cards - Dashboard Specific Overrides */
+.stat-card {
+    cursor: default;
+}
+
+.stat-card:hover {
+    transform: translateY(-2px);
+}
+
+.stat-value {
+    font-size: 2.5rem;
+    line-height: 1;
+    margin: var(--spacing-sm) 0;
+}
+
+/* Animation for stat values */
+@keyframes countUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.stat-value {
+    animation: countUp 0.5s ease-out;
+}

@@ -1,0 +1,111 @@
+/**
+ * css/variables.css
+ * CSS Custom Properties (Variables)
+ */
+
+:root {
+    color-scheme: light dark;
+    
+    /* Colors - Primary */
+    --primary-color: #4CAF50;
+    --primary-dark: #45a049;
+    --primary-light: #81C784;
+    --primary-lighter: light-dark(#C8E6C9, #1b5e20);
+
+    /* Colors - Secondary */
+    --secondary-color: #2196F3;
+    --secondary-dark: #1976D2;
+    --secondary-light: #64B5F6;
+
+    /* Colors - Status */
+    --success-color: #4CAF50;
+    --danger-color: #f44336;
+    --warning-color: #FF9800;
+    --info-color: #2196F3;
+
+    /* Colors - Neutrals with light-dark support */
+    --white: light-dark(#FFFFFF, #1e1e1e);
+    --gray-50: light-dark(#FAFAFA, #2a2a2a);
+    --gray-100: light-dark(#F5F5F5, #2f2f2f);
+    --gray-200: light-dark(#EEEEEE, #3a3a3a);
+    --gray-300: light-dark(#E0E0E0, #4a4a4a);
+    --gray-400: light-dark(#BDBDBD, #5a5a5a);
+    --gray-500: light-dark(#9E9E9E, #757575);
+    --gray-600: light-dark(#757575, #9E9E9E);
+    --gray-700: light-dark(#616161, #BDBDBD);
+    --gray-800: light-dark(#424242, #E0E0E0);
+    --gray-900: light-dark(#212121, #F5F5F5);
+    --black: light-dark(#000000, #FFFFFF);
+
+    /* Typography */
+    --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    --font-size-xs: 0.75rem;    /* 12px */
+    --font-size-sm: 0.875rem;   /* 14px */
+    --font-size-base: 1rem;     /* 16px */
+    --font-size-lg: 1.125rem;   /* 18px */
+    --font-size-xl: 1.25rem;    /* 20px */
+    --font-size-2xl: 1.5rem;    /* 24px */
+    --font-size-3xl: 1.875rem;  /* 30px */
+    --font-size-4xl: 2.25rem;   /* 36px */
+
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* Spacing */
+    --spacing-xs: 0.25rem;   /* 4px */
+    --spacing-sm: 0.5rem;    /* 8px */
+    --spacing-md: 1rem;      /* 16px */
+    --spacing-lg: 1.5rem;    /* 24px */
+    --spacing-xl: 2rem;      /* 32px */
+    --spacing-2xl: 3rem;     /* 48px */
+    --spacing-3xl: 4rem;     /* 64px */
+
+    /* Border Radius */
+    --radius-sm: 4px;
+    --radius-md: 6px;
+    --radius-lg: 8px;
+    --radius-xl: 12px;
+    --radius-2xl: 16px;
+    --radius-full: 9999px;
+
+    /* Shadows with light-dark support */
+    --shadow-sm: light-dark(0 1px 2px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.3));
+    --shadow-md: light-dark(0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 4px 6px -1px rgba(0, 0, 0, 0.4));
+    --shadow-lg: light-dark(0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 10px 15px -3px rgba(0, 0, 0, 0.5));
+    --shadow-xl: light-dark(0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 20px 25px -5px rgba(0, 0, 0, 0.6));
+
+    /* Layout */
+    --sidebar-width: 260px;
+    --navbar-height: 64px;
+    --container-max-width: 1400px;
+
+    /* Transitions */
+    --transition-fast: 150ms ease;
+    --transition-base: 300ms ease;
+    --transition-slow: 500ms ease;
+
+    /* Z-index */
+    --z-dropdown: 1000;
+    --z-sticky: 1020;
+    --z-fixed: 1030;
+    --z-modal-backdrop: 1040;
+    --z-modal: 1050;
+    --z-popover: 1060;
+    --z-tooltip: 1070;
+    
+    /* Background colors */
+    --bg-primary: light-dark(#FFFFFF, #1e1e1e);
+    --bg-secondary: light-dark(#F5F5F5, #2a2a2a);
+    --bg-tertiary: light-dark(#FAFAFA, #252525);
+    
+    /* Text colors */
+    --text-primary: light-dark(#212121, #F5F5F5);
+    --text-secondary: light-dark(#616161, #BDBDBD);
+    --text-tertiary: light-dark(#9E9E9E, #757575);
+    
+    /* Border colors */
+    --border-color: light-dark(#E0E0E0, #3a3a3a);
+    --border-color-light: light-dark(#EEEEEE, #2f2f2f);
+}
